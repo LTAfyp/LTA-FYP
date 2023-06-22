@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>LTA.sg</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel = "icon" href="https://pbs.twimg.com/profile_images/582352199814008832/GVZJ5FiC_400x400.jpg">
+    <meta name="desciption" content="LTA Jurong Regional Line">
+    <meta charset="utf-8">
+    <meta name="LTA" content="index,follow"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img 
+    src="/Images/icon.jpg" width="60" alt="Picture of LTA logo" title="Land Transport Authority">
+    <hr></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Home_page.html">Home</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sign_in.html">Defects</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="NCR_page.html">NCR</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Progress
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Typetest.html">Type Test</a>
+            <a class="dropdown-item" href="Routinetest.html">Routine Test</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Safety</a>
+        </li>
+          </div>
+        </li>
+      
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="intro">
+    <form action="/action_page.php">
+      <label for="Project">Project :</label>
+      <select name="Project" id="Project">
+        <option value="J151">J151</option>
+        <option value="J152">J152</option>
+        <option value="J153">J153</option>
+        <option value="J154">J154</option>
+        <option value="J155">J155</option>
+      </select>
+      <table border="1" style="width:100%">
+        <tr> 
+          
+           <th>Details</th>
+           <th>Locations of Defect</th>
+           <th>Classifications</th>
+           
+         </tr>
+         <tr>
+           <td>Defects No. : <input type="number" id="DefectNo." name="DefectNo."></td>
+          <td>
+            <label for="Location1">Location(1):</label>
+            <select name="Location1" id="Location1">
+              <option value="Car End">Cab End</option>
+              <option value="End">End</option>
+              <option value="Exterior">Exterior</option>
+              <option value="Interior">Interior</option>
+              <option value="Others">Others</option>
+              <option value="Roof">Roof</option>
+              <option value="Underframe">Underframe</option>
+            </select></td>
+           <td><label for="Defect Class">Defect Class :</label>
+            <select name="DefectClass" id="DefectClass">
+              <option value="Minor">Minor</option>
+              <option value="Major">Major</option>
+            </select></td>
+         </tr>
+         <tr> 
+           <td>Status :
+            <select name="DefectStatus" id="DefectStatus">
+              <option value="Open">Open</option>
+              <option value="Closed">Closed</option>
+           </td>
+
+          <td>
+            <label for="Location2">Location(2):</label>
+            <select name="Location2" id="Location2">
+              <option value="A1">A1</option>
+              <option value="A2">A2</option>
+              <option value="A3">A3</option>
+              <option value="All">All</option>
+              <option value="B1">B1</option>
+              <option value="B2">B2</option>
+              <option value="B2 Door $Carbody B side">B2 Door & Carbody B side</option>
+              <option value="B3">B3</option>
+              <option value="Bogie Brake Shoe">Bogie Brake Shoe</option>
+              <option value="Cab end">Cab end</option>
+              <option value="Carbody Gangway end">Carbody Gangway end</option>
+              <option value="Door and Carbody">Door and Carbody</option>
+              <option value="Doorstep">Doorstep</option>
+              <option value="EDD">EDD</option>
+              <option value="End 1">End 1</option>
+              <option value="End 2">End 2</option>
+              <option value="Flooring">Flooring</option>
+              <option value="Other">Other</option>
+              <option value="Side wall">Side wall</option>
+              <option value="Side/front window">Side/front window</option>
+              <option value="Underframe">Underframe</option>
+            </select></td>
+          
+           <td>
+            <label for="DefectType">Defect Type :</label>
+          <select name="DefectType" id="DefectType">
+            <option value="Color deviation">Color deviation</option>
+            <option value="Crack">Crack</option>
+            <option value="Crater">Crater</option>
+            <option value="Damaged">Damaged</option>
+            <option value="dent">dent</option>
+            <option value="Distortion">Distortion</option>
+            <option value="Excessive">Excessive</option>
+            <option value="Fell off">Fell off</option>
+            <option value="Finishing">Finishing</option>
+            <option value="Flatness">Flatness</option>
+            <option value="Gap">Gap</option>
+            <option value="Inclusion">Inclusion</option>
+            <option value="Incomplete">Incomplete</option>
+            <option value="Insufficient">Insufficient</option>
+            <option value="Label">Label</option>
+            <option value="Others">Others</option>
+            <option value="Overlapping">Overlapping</option>
+            <option value="Paint Chipped off">Paint Chipped off</option>
+            <option value="Peeling">Peeling</option>
+            <option value="Pinhole">Pinhole</option>
+            <option value="Porosity">Porosity</option>
+            <option value="Rust">Rust</option>
+            <option value="Scratch">Scratch</option>
+            <option value="Stain">Stain</option>
+            <option value="Wrong Comp">Wrong Comp</option>
+          </select>
+          </td>
+        </tr>
+        <tr> 
+           <td>Train No. : 
+            <select name="Train No." id="Train No.">
+              <option value="Incoming">Incoming</option>
+              <option value="M001">M001</option>
+              <option value="M002">M002</option>
+              <option value="M003">M003</option>
+              <option value="M004">M004</option>
+              <option value="M005,012">M005,012</option>
+              <option value="M006">M006</option>
+              <option value="M007">M007</option>
+              <option value="M009">M009</option>
+              <option value="M011">M011</option>
+              <option value="M011M004">M011M004</option>
+              <option value="M012">M012</option>
+              <option value="PV01">PV01</option>
+              <option value="PV01, PV02">PV01, PV02</option>
+              <option value="PV02">PV02</option>
+              <option value="PV03">PV03</option>
+              <option value="T001">T001</option>
+              <option value="T001T004">T001T004</option>
+              <option value="T005">T005</option>
+              <option value="T006">T006</option>
+            </select></td>
+           
+           <th>
+            Input Image
+           </th>
+           <td>Defect Description :</td>
+        </tr>
+        <td>Car No. :
+          <select name="Car No." id="Car No.">
+            <option value="30011">30011</option>
+            <option value="30012">30012</option>
+            <option value="30021">30021</option>
+            <option value="30022">30022</option>
+            <option value="30023">30023</option>
+            <option value="30031">30031</option>
+            <option value="30032">30032</option>
+            <option value="30033">30033</option>
+            <option value="30011 and 30013">30011 and 30013</option>
+            <option value="30011, 30012, 30013, 30022">30011, 30012, 30013, 30022</option>
+          </select></td>
+        
+        <td rowspan="3"><input type="image" src="/Images/Defects.JPG" alt="Defect img"></td>
+        <td rowspan="3"><input type="text">
+          
+        </td>
+      </tr>
+      <tr> 
+        <td>Car Type : 
+          <select name="Manufacturing" id="Manufacturing">
+            <option value="DM1">DM1</option>
+            <option value="DM1,DM2,T">DM1,DM2,T</option>
+            <option value="DM2">DM2</option>
+            <option value="T">T</option>
+          </select></td>
+        
+      
+      </tr>
+      <tr> 
+        <td>Carbody ID no. : 
+          <select name="CarbodyID" id="CarbodyID">
+          <option value="001-DM3-001">001-DM3-001</option>
+          <option value="003-DM4-001">003-DM4-001</option>
+          <option value="004-DM3-001">004-DM3-001</option>
+          <option value="005-T1-001">005-T-001</option>
+          <option value="007-DM3-002">007-DM3-002</option>
+          <option value="M003">M003</option>
+          <option value="M009">M009</option>
+          <option value="NA">NA</option>
+          <option value="#NA">#NA</option>
+        </select></td>
+      </tr>
+      <tr> 
+        <td>Date Open<input type="date"><br>Open By :<input type="text"></td>
+        <td>Date Closed<input type="date"><br>Closed By :<input type="text"></td>
+        <td>Remarks : <input type="text" </td>
+      </tr>
+      </table>
+     <br>
+       <!-- <label for="Project">Project :</label>
+      <select name="Project" id="Project">
+        <option value="J151">J151</option>
+        <option value="J152">J152</option>
+        <option value="J153">J153</option>
+        <option value="J154">J154</option>
+        <option value="J155">J155</option>
+      </select> 
+      <table border="1" style="width:100%">
+          <tr> 
+            
+             <th>Details</th>
+             <th>Locations of Defect</th>
+             <th>Classifications</th>
+             
+           </tr>
+           <tr>
+             <td>Defects No. : <input type="number" id="DefectNo." name="DefectNo."></td>
+            <td>
+              <label for="Location1">Location(1):</label>
+              <select name="Location1" id="Location1">
+                <option value="Car End">Cab End</option>
+                <option value="End">End</option>
+                <option value="Exterior">Exterior</option>
+                <option value="Interior">Interior</option>
+                <option value="Others">Others</option>
+                <option value="Roof">Roof</option>
+                <option value="Underframe">Underframe</option>
+              </select></td>
+             <td><label for="Defect Class">Defect Class :</label>
+              <select name="DefectClass" id="DefectClass">
+                <option value="Minor">Minor</option>
+                <option value="Major">Major</option>
+              </select></td>
+           </tr>
+           <tr> 
+             <td>Status :
+              <select name="DefectStatus" id="DefectStatus">
+                <option value="Open">Open</option>
+                <option value="Closed">Closed</option>
+             </td>
+  
+            <td>
+              <label for="Location2">Location(2):</label>
+              <select name="Location2" id="Location2">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="All">All</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="B2 Door $Carbody B side">B2 Door & Carbody B side</option>
+                <option value="B3">B3</option>
+                <option value="Bogie Brake Shoe">Bogie Brake Shoe</option>
+                <option value="Cab end">Cab end</option>
+                <option value="Carbody Gangway end">Carbody Gangway end</option>
+                <option value="Door and Carbody">Door and Carbody</option>
+                <option value="Doorstep">Doorstep</option>
+                <option value="EDD">EDD</option>
+                <option value="End 1">End 1</option>
+                <option value="End 2">End 2</option>
+                <option value="Flooring">Flooring</option>
+                <option value="Other">Other</option>
+                <option value="Side wall">Side wall</option>
+                <option value="Side/front window">Side/front window</option>
+                <option value="Underframe">Underframe</option>
+              </select></td>
+            
+             <td>
+              <label for="DefectType">Defect Type :</label>
+            <select name="DefectType" id="DefectType">
+              <option value="Color deviation">Color deviation</option>
+              <option value="Crack">Crack</option>
+              <option value="Crater">Crater</option>
+              <option value="Damaged">Damaged</option>
+              <option value="dent">dent</option>
+              <option value="Distortion">Distortion</option>
+              <option value="Excessive">Excessive</option>
+              <option value="Fell off">Fell off</option>
+              <option value="Finishing">Finishing</option>
+              <option value="Flatness">Flatness</option>
+              <option value="Gap">Gap</option>
+              <option value="Inclusion">Inclusion</option>
+              <option value="Incomplete">Incomplete</option>
+              <option value="Insufficient">Insufficient</option>
+              <option value="Label">Label</option>
+              <option value="Others">Others</option>
+              <option value="Overlapping">Overlapping</option>
+              <option value="Paint Chipped off">Paint Chipped off</option>
+              <option value="Peeling">Peeling</option>
+              <option value="Pinhole">Pinhole</option>
+              <option value="Porosity">Porosity</option>
+              <option value="Rust">Rust</option>
+              <option value="Scratch">Scratch</option>
+              <option value="Stain">Stain</option>
+              <option value="Wrong Comp">Wrong Comp</option>
+            </select>
+            </td>
+          </tr>
+          <tr> 
+             <td>Train No. : 
+              <select name="Train No." id="Train No.">
+                <option value="Incoming">Incoming</option>
+                <option value="M001">M001</option>
+                <option value="M002">M002</option>
+                <option value="M003">M003</option>
+                <option value="M004">M004</option>
+                <option value="M005,012">M005,012</option>
+                <option value="M006">M006</option>
+                <option value="M007">M007</option>
+                <option value="M009">M009</option>
+                <option value="M011">M011</option>
+                <option value="M011M004">M011M004</option>
+                <option value="M012">M012</option>
+                <option value="PV01">PV01</option>
+                <option value="PV01, PV02">PV01, PV02</option>
+                <option value="PV02">PV02</option>
+                <option value="PV03">PV03</option>
+                <option value="T001">T001</option>
+                <option value="T001T004">T001T004</option>
+                <option value="T005">T005</option>
+                <option value="T006">T006</option>
+              </select></td>
+             
+             <th>
+              Input Image
+             </th>
+             <td>Defect Description :</td>
+          </tr>
+          <td>Car No. :
+            <select name="Car No." id="Car No.">
+              <option value="30011">30011</option>
+              <option value="30012">30012</option>
+              <option value="30021">30021</option>
+              <option value="30022">30022</option>
+              <option value="30023">30023</option>
+              <option value="30031">30031</option>
+              <option value="30032">30032</option>
+              <option value="30033">30033</option>
+              <option value="30011 and 30013">30011 and 30013</option>
+              <option value="30011, 30012, 30013, 30022">30011, 30012, 30013, 30022</option>
+            </select></td>
+          
+          <td rowspan="3"><input type="image" src="/Images/Defects.JPG" alt="Defect img"></td>
+          <td rowspan="3"><input type="text">
+            
+          </td>
+        </tr>
+        <tr> 
+          <td>Car Type : 
+            <select name="Manufacturing" id="Manufacturing">
+              <option value="DM1">DM1</option>
+              <option value="DM1,DM2,T">DM1,DM2,T</option>
+              <option value="DM2">DM2</option>
+              <option value="T">T</option>
+            </select></td>
+          
+        
+        </tr>
+        <tr> 
+          <td>Carbody ID no. : 
+            <select name="CarbodyID" id="CarbodyID">
+            <option value="001-DM3-001">001-DM3-001</option>
+            <option value="003-DM4-001">003-DM4-001</option>
+            <option value="004-DM3-001">004-DM3-001</option>
+            <option value="005-T1-001">005-T-001</option>
+            <option value="007-DM3-002">007-DM3-002</option>
+            <option value="M003">M003</option>
+            <option value="M009">M009</option>
+            <option value="NA">NA</option>
+            <option value="#NA">#NA</option>
+          </select></td>
+        </tr>
+        <tr> 
+          <td>Date Open<input type="date"><br>Open By :<input type="text"></td>
+          <td>Date Closed<input type="date"><br>Closed By :<input type="text"></td>
+          <td>Remarks : <input type="text" </td>
+         
+        </tr>
+        </table> -->
+       <br>
+       <input type="submit" value="Submit">
+      </form>
+  </div>
+        
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  </body>
+</html>

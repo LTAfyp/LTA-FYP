@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTA.sg</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href="https://pbs.twimg.com/profile_images/582352199814008832/GVZJ5FiC_400x400.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img 
+        src="/Images/icon.jpg" width="60" alt="Picture of LTA logo" title="Land Transport Authority">
+        <hr></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home_page.html">Home</a>
+    
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Sign_in.html">Defects</a>
+    
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NCR_page.html">NCR</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Progress
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Typetest.html">Type Test</a>
+                    <a class="dropdown-item" href="Routinetest.html">Routine Test</a>
+                  </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Safety</a>
+            </li>
+              </div>
+            </li>
+          
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <h2>Off-Site Type Test</h2>
+      <table style="width:100%">
+        <tr>
+          <th>S/N</th>
+          <th><label for="TypeTest">Type Test :</label>
+            <select name="TypeTest" id="TypeTest">
+              <option value="Car Level">Car level</option>
+              <option value="Train Level (static)">Train Level (Static)</option>
+              <option value="Train Level (Dynamic)">Train Level (Dynamic)</option>
+            </select></th>
+            <th>Train/Car Type</th>
+            <th>Plan Start</th>
+            <th>Actual Start</th>
+            <th>Plan End</th>
+            <th>Actual End</th>
+            <th>Completion(%)</th>
+            <th>Conducted(%)</th>
+        </tr>
+        <tr>
+          <td class="N">1</td>
+          <td><input type="text"></td>
+          <td>
+            <select name="Train/Car Type" id="Train/Car Type">
+                <option value="PV01">PV01</option>
+                <option value="PV02">PV02</option>
+                <option value="PV03">PV03</option>
+              </select>
+              <select name="Train/Car Type2" id="Train/Car Type2">
+                <option value=""></option>
+                <option value="DM1">DM1</option>
+                <option value="DM2">DM2</option>
+                <option value="T">T</option>
+                <option value="All">All</option>
+              </select>
+          </td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+
+          <td><div class="box">
+              <input type="range" class="range" min="0" max="100" value="0" onmousemove="rangeSlider(this.value)">
+              <span id="rangeValue">0</span>
+            </div>
+            <script>
+              function rangeSlider(value){
+                document.getElementById("rangeValue").innerHTML= value;
+              }
+            </script>
+          </td>
+
+          <td><div class="box">
+            <input type="range" class="range" min="0" max="100" value="0" onmousemove="rangeSlider2(this.value)">
+            <span id="rangeValue2">0</span>
+          </div>
+          <script>
+            function rangeSlider2(value){
+              document.getElementById("rangeValue2").innerHTML= value;
+            }
+          </script>
+          </td>
+        </tr>
+        <tr>
+          <td>remarks</td>
+          <td colspan="8"><input type="text"></td>
+        </tr>
+        <tr>
+          <td class="N">2</td>
+          <td><input type="text"></td>
+          <td>
+            <select name="Train/Car Type" id="Train/Car Type">
+                <option value="PV01">PV01</option>
+                <option value="PV02">PV02</option>
+                <option value="PV03">PV03</option>
+              </select>
+              <select name="Train/Car Type2" id="Train/Car Type2">
+                <option value=""></option>
+                <option value="DM1">DM1</option>
+                <option value="DM2">DM2</option>
+                <option value="T">T</option>
+                <option value="All">All</option>
+              </select>
+          </td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+
+          <td><div class="box">
+              <input type="range" class="range" min="0" max="100" value="0" onmousemove="rangeSlider3(this.value)">
+              <span id="rangeValue3">0</span>
+            </div>
+            <script>
+              function rangeSlider3(value){
+                document.getElementById("rangeValue3").innerHTML= value;
+              }
+            </script>
+          </td>
+
+          <td><div class="box">
+            <input type="range" class="range" min="0" max="100" value="0" onmousemove="rangeSlider4(this.value)">
+            <span id="rangeValue4">0</span>
+          </div>
+          <script>
+            function rangeSlider4(value){
+              document.getElementById("rangeValue4").innerHTML= value;
+            }
+          </script>
+          </td>
+        </tr>
+        <tr>
+          <td>remarks</td>
+          <td colspan="8"><input type="text"></td>
+        </tr>
+        <tr>
+          <td class="N">3</td>
+          <td><input type="text"></td>
+          <td>
+            <select name="Train/Car Type" id="Train/Car Type">
+                <option value="PV01">PV01</option>
+                <option value="PV02">PV02</option>
+                <option value="PV03">PV03</option>
+              </select>
+              <select name="Train/Car Type2" id="Train/Car Type2">
+                <option value=""></option>
+                <option value="DM1">DM1</option>
+                <option value="DM2">DM2</option>
+                <option value="T">T</option>
+                <option value="All">All</option>
+              </select>
+          </td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+          <td><input type="date"></td>
+
+          <td><div class="box">
+              <input type="range" class="range" min="0" max="100" value="0" onmousemove="rangeSlider5(this.value)">
+              <span id="rangeValue5">0</span>
+            </div>
+            <script>
+              function rangeSlider5(value){
+                document.getElementById("rangeValue5").innerHTML= value;
+              }
+            </script>
+          </td>
+
+          <td><div class="box">
+            <input type="range" class="range" min="0" max="100" value="0" onmousemove="rangeSlider6(this.value)">
+            <span id="rangeValue6">0</span>
+          </div>
+          <script>
+            function rangeSlider6(value){
+              document.getElementById("rangeValue6").innerHTML= value;
+            }
+          </script>
+          </td>
+        </tr>
+        <tr>
+          <td>remarks</td>
+          <td colspan="8"><input type="text"></td>
+        </tr>
+        <tr>
+          <td>Progress(%)</td>
+          <td colspan="8">
+            <div  class="box">
+              <input type="range" class="range" min="0" max="100" value="0" onmousemove="rangeSlider7(this.value)">
+              <span id="rangeValue7">0</span>
+            </div>
+            <script>
+              function rangeSlider7(value){
+                document.getElementById("rangeValue7").innerHTML= value;
+              }
+            </script>
+          </td>
+        </tr>
+      </table>
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>     
+</body>
+</html>

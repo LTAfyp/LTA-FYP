@@ -1,0 +1,343 @@
+.vidtest{
+    border-style: solid;
+    height: 40vh;
+    float: middle;
+
+}
+
+.testHeader1{
+    float: middle;
+    font-size: 10vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.background{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;;
+  opacity: 0.1;
+  overflow-y: hidden ! important;
+  overflow-x: hidden ! important;
+  background-size: cover;
+  background-blend-mode: difference;
+  
+}
+
+
+
+.Jurong{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.vidtest{
+    width: 50vw;
+
+    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased
+    }
+    
+   
+
+    body {
+        background: hwb(0 97% 1%);
+        font-family: rubik,sans-serif
+
+    }
+    
+    .login-form {
+        background: #e27e7e;
+        width: 50vw;
+        margin: 10vh auto;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        border-radius: 4px;
+        box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2)
+        
+    }
+    
+    .login-form h1 {
+        padding: 5vh 20vw 0;
+        font-weight: 300
+    }
+    
+    .login-form .content {
+        padding: 5vh;
+        text-align: center
+    }
+    
+    .login-form .input-field {
+        padding: 12px 5px
+    }
+    
+    .login-form .input-field input {
+        font-size: 16px;
+        display: block;
+        font-family: rubik,sans-serif;
+        width: 100%;
+        padding: 10px 1px;
+        border: 0;
+        border-bottom: 1px solid #747474;
+        outline: none;
+        -webkit-transition: all .2s;
+        transition: all .2s
+    }
+    
+    .login-form .input-field input::-webkit-input-placeholder {
+        text-transform: uppercase
+    }
+    
+    .login-form .input-field input::-moz-placeholder {
+        text-transform: uppercase
+    }
+    
+    .login-form .input-field input:-ms-input-placeholder {
+        text-transform: uppercase
+    }
+    
+    .login-form .input-field input::-ms-input-placeholder {
+        text-transform: uppercase
+    }
+    
+    .login-form .input-field input::placeholder {
+        text-transform: uppercase
+    }
+    
+    .login-form .input-field input:focus {
+        border-color: #222
+    }
+    
+    .login-form a.link {
+        text-decoration: none;
+        color: #747474;
+        letter-spacing: .2px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-top: 20px
+    }
+    
+    
+    .login-form .action {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row
+    }
+    
+    .login-form .action button {
+        width: 100%;
+        border: none;
+        padding: 18px;
+        font-family: rubik,sans-serif;
+        cursor: pointer;
+        text-transform: uppercase;
+        background: #e8e9ec;
+        color: #777;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 0;
+        letter-spacing: .2px;
+        outline: 0;
+        -webkit-transition: all .3s;
+        transition: all .3s
+    }
+    
+    .login-form .action button:hover {
+        background: #d8d8d8
+    }
+    
+    .login-form .action button:nth-child(2) {
+        background: #4767a3;
+        color: #fff;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 4px
+        
+    }
+    
+    .login-form .action button:nth-child(2):hover {
+        background: #415163
+}
+
+/* Dropdown Button 
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+  }*/
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default)
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } */
+  
+  /* Links inside the dropdown 
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }*/
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.title{
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: rgb(255, 255, 255);
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.signinbtn {
+    background-color: #0483aa;
+    color: rgb(255, 255, 255);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    
+  }
+  
+  .signin:hover {
+    opacity:1;
+  }
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.intro{padding: 1em;
+}
+
+@media only screen 
+  and (min-device-width: 457px) 
+  and (max-device-width: 814px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .intro{
+      font-size: 1em;
+      
+    }
+
+}
+.list-group{
+  object-fit: none; 
+  object-position: left top;
+}
+.range{
+  height: 100%;
+  width:100%;
+}
+.box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#rangeValue{
+  position: relative;
+  text-align: center;
+  width: 60px;
+}
+#rangeValue2{
+  position: relative;
+  text-align: center;
+  width: 60px;
+}
+#rangeValue3, #rangeValue4, #rangeValue5, #rangeValue6, #rangeValue7{
+  position: relative;
+  text-align: center;
+  width: 60px;
+}
+.N{
+  text-align: center;
+}
