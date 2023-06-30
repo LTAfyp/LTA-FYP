@@ -68,14 +68,14 @@
         <tr> 
            <th></th>
            <th>Details</th>
-           <th>Locations of Defect</th>
+           <th>Locations of NCR</th>
            <th>Classifications</th>
            
          </tr>
          <tr>
            <th>NCR No.</th>
            <td>
-            <select name="Status" id="Status">
+            <!-- <select name="Status" id="Status">
               <option value="NR20220400060">NR20220400060</option>
               <option value="NCR-RNE2001-CB-002">NCR-RNE2001-CB-002</option>
               <option value="NR20220400092">NR20220400092</option>
@@ -83,12 +83,22 @@
               <option value="NR20220600133">NR20220600133</option>
               <option value="NR20220600318">NR20220600318</option>
               <option value="NR20220600319">NR20220600319</option>
+            </select> -->
+            <select name="Status" id="Status">
+              <option value="NR20220400060">Status 1</option>
+              <option value="NCR-RNE2001-CB-002">Status 2</option>
+              <option value="NR20220400092">Status 3</option>
+              <option value="NR20220500143">Status 4</option>
+              <option value="NR20220600133">Status 5</option>
+              <option value="NR20220600318">Status 6</option>
+              <option value="NR20220600319">Status 7</option>
+            </select>
            </td>
           
 
           <td>
             <label for="Location1">Location(1):</label>
-            <select name="Location1" id="Location1">
+            <!-- <select name="Location1" id="Location1">
               <option value="Carbody">Carbody</option>
               <option value="EDD">EDD</option>
               <option value="End">End</option>
@@ -98,7 +108,19 @@
               <option value="Pre-Delivery Inspection_KPI">Pre-Delivery Inspection_KPI</option>
               <option value="Roof">Roof</option>
               <option value="Underframe">Underframe</option>
-            </select></td>
+            </select> -->
+            <select name="Location1" id="Location1">
+              <option value="Carbody">Location a</option>
+              <option value="EDD">Location b</option>
+              <option value="End">Location c</option>
+              <option value="Exterior">Location d</option>
+              <option value="Paint KPI">Location e</option>
+              <option value="Interior">Location6</option>
+              <option value="Pre-Delivery Inspection_KPI">Location f</option>
+              <option value="Roof">Location g</option>
+              <option value="Underframe">Location h</option>
+            </select>
+          </td>
            <td>NCR Description :</td>
          </tr>
          <tr> 
@@ -111,7 +133,7 @@
 
           <td>
             <label for="Location2">Location(2):</label>
-            <select name="Location2" id="Location2">
+            <!-- <select name="Location2" id="Location2">
               <option value="B2 Door">B2 Door</option>
               <option value="B2 Door & Carbody B side">B2 Door & Carbody B side</option>
               <option value="Cab Mask">Cab Mask</option>
@@ -122,7 +144,20 @@
               <option value="Others">Others</option>
               <option value="Roof">Roof</option>
               <option value="Wheelchair Space Grabpole">Wheelchair Space Grabpole</option>
-            </select></td>
+            </select> -->
+            <select name="Location2" id="Location2">
+              <option value="B2 Door">Location2 a</option>
+              <option value="B2 Door & Carbody B side">Location2 b</option>
+              <option value="Cab Mask">Location2 c</option>
+              <option value="Door">Location2 d</option>
+              <option value="Exterior">Location2 e</option>
+              <option value="Floor">Location2 f</option>
+              <option value="Interior">Location2 g</option>
+              <option value="Others">Location2 h</option>
+              <option value="Roof">Location2 i</option>
+              <option value="Wheelchair Space Grabpole">Location2 j</option>
+            </select>
+          </td>
            
            <td>
             <input type="text">
@@ -131,20 +166,28 @@
         <tr> 
            <th>Train No.</th>
            <td>
-            <select name="Train No." id="Train No.">
+            <!-- <select name="Train No." id="Train No.">
               <option value="N.A">N.A</option>
               <option value="PV01">PV01</option>
               <option value="PV02">PV02</option>
               <option value="PV03">PV03</option>
               <option value="PV01,PV02">PV01,PV02</option>
-            </select></td>
+            </select> -->
+            <select name="Train No." id="Train No.">
+              <option value="N.A">Train No. 1</option>
+              <option value="PV01">Train No.2</option>
+              <option value="PV02">Train No.3</option>
+              <option value="PV03">Train No.4</option>
+              <option value="PV01,PV02">Train No.5</option>
+            </select>
+          </td>
          
            <th>Input Image</th>
            <td>NCR Report :</td>
         </tr>
         <th>Car No.</th>
         <td>
-          <select name="Car No." id="Car No.">
+          <!-- <select name="Car No." id="Car No.">
             <option value="30011">30011</option>
             <option value="30012">30012</option>
             <option value="30021">30021</option>
@@ -155,7 +198,20 @@
             <option value="30033">30033</option>
             <option value="30011 and 30013">30011 and 30013</option>
             <option value="30011, 30012, 30013, 30022">30011, 30012, 30013, 30022</option>
-          </select></td>
+          </select> -->
+          <select name="Car No." id="Car No.">
+            <option value="30011">Car No.1</option>
+            <option value="30012">Car No.2</option>
+            <option value="30021">Car No.3</option>
+            <option value="30022">Car No.4</option>
+            <option value="30023">Car No.5</option>
+            <option value="30031">Car No.6</option>
+            <option value="30032">Car No.7</option>
+            <option value="30033">Car No.8</option>
+            <option value="30011 and 30013">Car No.9</option>
+            <option value="30011, 30012, 30013, 30022">Car No.9</option>
+          </select>
+        </td>
         
         <td rowspan="3"><input type="image" src="/Images/NCR.JPG" alt="NCR image">
         </td>

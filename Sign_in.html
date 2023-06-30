@@ -64,12 +64,19 @@
   <div class="intro">
     <form action="/action_page.php">
       <label for="Project">Project :</label>
-      <select name="Project" id="Project">
+      <!-- <select name="Project" id="Project">
         <option value="J151">J151</option>
         <option value="J152">J152</option>
         <option value="J153">J153</option>
         <option value="J154">J154</option>
         <option value="J155">J155</option>
+      </select> -->
+      <select name="Project" id="Project">
+        <option value="J151">project 1</option>
+        <option value="J152">project 2</option>
+        <option value="J153">project 3</option>
+        <option value="J154">project 4</option>
+        <option value="J155">project 5</option>
       </select>
       <table border="1" style="width:100%">
         <tr> 
@@ -83,7 +90,7 @@
            <td>Defects No. : <input type="number" id="DefectNo." name="DefectNo."></td>
           <td>
             <label for="Location1">Location(1):</label>
-            <select name="Location1" id="Location1">
+            <!-- <select name="Location1" id="Location1">
               <option value="Car End">Cab End</option>
               <option value="End">End</option>
               <option value="Exterior">Exterior</option>
@@ -91,6 +98,15 @@
               <option value="Others">Others</option>
               <option value="Roof">Roof</option>
               <option value="Underframe">Underframe</option>
+            </select> -->
+            <select name="Location1" id="Location1">
+              <option value="Car End">Location(1) 1</option>
+              <option value="End">Location(1) 2</option>
+              <option value="Exterior">Location(1) 3</option>
+              <option value="Interior">Location(1) 4</option>
+              <option value="Others">Location(1) 5</option>
+              <option value="Roof">Location(1) 6</option>
+              <option value="Underframe">Location(1) 7</option>
             </select></td>
            <td><label for="Defect Class">Defect Class :</label>
             <select name="DefectClass" id="DefectClass">
@@ -107,7 +123,7 @@
 
           <td>
             <label for="Location2">Location(2):</label>
-            <select name="Location2" id="Location2">
+            <!-- <select name="Location2" id="Location2">
               <option value="A1">A1</option>
               <option value="A2">A2</option>
               <option value="A3">A3</option>
@@ -129,11 +145,34 @@
               <option value="Side wall">Side wall</option>
               <option value="Side/front window">Side/front window</option>
               <option value="Underframe">Underframe</option>
+            </select> -->
+            <select name="Location2" id="Location2">
+              <option value="A1">Location(2) 1</option>
+              <option value="A2">Location(2) 2</option>
+              <option value="A3">Location(2) 3</option>
+              <option value="All">Location(2) 4</option>
+              <option value="B1">Location(2) 5</option>
+              <option value="B2">Location(2) 6</option>
+              <option value="B2 Door $Carbody B side">Location(2) 7</option>
+              <option value="B3">Location(2) 8</option>
+              <option value="Bogie Brake Shoe">Location(2) 9</option>
+              <option value="Cab end">Location(2) 10</option>
+              <option value="Carbody Gangway end">Location(2) 11</option>
+              <option value="Door and Carbody">Location(2) 12</option>
+              <option value="Doorstep">Location(2) 13</option>
+              <option value="EDD">Location(2) 14</option>
+              <option value="End 1">Location(2) 15</option>
+              <option value="End 2">Location(2) 16</option>
+              <option value="Flooring">Location(2) 17</option>
+              <option value="Other">Location(2) 18</option>
+              <option value="Side wall">Location(2) 19</option>
+              <option value="Side/front window">Location(2) 20</option>
+              <option value="Underframe">Location(2) 21</option>
             </select></td>
           
            <td>
             <label for="DefectType">Defect Type :</label>
-          <select name="DefectType" id="DefectType">
+          <!-- <select name="DefectType" id="DefectType">
             <option value="Color deviation">Color deviation</option>
             <option value="Crack">Crack</option>
             <option value="Crater">Crater</option>
@@ -159,12 +198,39 @@
             <option value="Scratch">Scratch</option>
             <option value="Stain">Stain</option>
             <option value="Wrong Comp">Wrong Comp</option>
+          </select> -->
+          <select name="DefectType" id="DefectType">
+            <option value="Color deviation">Defect Type 1</option>
+            <option value="Crack">Defect Type 2</option>
+            <option value="Crater">Defect Type 3</option>
+            <option value="Damaged">Defect Type 4</option>
+            <option value="dent">Defect Type 5</option>
+            <option value="Distortion">Defect Type 6</option>
+            <option value="Excessive">Defect Type 7</option>
+            <option value="Fell off">Defect Type 8</option>
+            <option value="Finishing">Defect Type 9</option>
+            <option value="Flatness">Defect Type 10</option>
+            <option value="Gap">Defect Type 11</option>
+            <option value="Inclusion">Defect Type 12</option>
+            <option value="Incomplete">Defect Type 13</option>
+            <option value="Insufficient">Defect Type 14</option>
+            <option value="Label">Defect Type 15</option>
+            <option value="Others">Defect Type 16</option>
+            <option value="Overlapping">Defect Type 17</option>
+            <option value="Paint Chipped off">Defect Type 18</option>
+            <option value="Peeling">Defect Type 19</option>
+            <option value="Pinhole">Defect Type 20</option>
+            <option value="Porosity">Defect Type 21</option>
+            <option value="Rust">Defect Type 22</option>
+            <option value="Scratch">Defect Type 23</option>
+            <option value="Stain">Defect Type 24</option>
+            <option value="Wrong Comp">Defect Type 25</option>
           </select>
           </td>
         </tr>
         <tr> 
-           <td>Train No. : 
-            <select name="Train No." id="Train No.">
+           <td><label for="TrainNo">Train No :</label>
+            <!-- <select name="Train No." id="Train No.">
               <option value="Incoming">Incoming</option>
               <option value="M001">M001</option>
               <option value="M002">M002</option>
@@ -185,15 +251,37 @@
               <option value="T001T004">T001T004</option>
               <option value="T005">T005</option>
               <option value="T006">T006</option>
-            </select></td>
-           
+            </select> -->
+            <select name="TrainNo." id="TrainNo.">
+              <option value="Incoming">Train No.1</option>
+              <option value="M001">Train No.2</option>
+              <option value="M002">Train No.3</option>
+              <option value="M003">Train No.4</option>
+              <option value="M004">Train No.5</option>
+              <option value="M005,012">Train No.6</option>
+              <option value="M006">Train No.7</option>
+              <option value="M007">Train No.8</option>
+              <option value="M009">Train No.9</option>
+              <option value="M011">Train No.10</option>
+              <option value="M011M004">Train No.11</option>
+              <option value="M012">Train No.12</option>
+              <option value="PV01">Train No.13</option>
+              <option value="PV01, PV02">Train No.14</option>
+              <option value="PV02">Train No.15</option>
+              <option value="PV03">Train No.16</option>
+              <option value="T001">Train No.17</option>
+              <option value="T001T004">Train No.18</option>
+              <option value="T005">Train No.19</option>
+              <option value="T006">Train No.20</option>
+            </select>
+          </td>
            <th>
             Input Image
            </th>
            <td>Defect Description :</td>
         </tr>
-        <td>Car No. :
-          <select name="Car No." id="Car No.">
+        <td><label for="CarNo">Car No. :</label>
+          <!-- <select name="Car No." id="Car No.">
             <option value="30011">30011</option>
             <option value="30012">30012</option>
             <option value="30021">30021</option>
@@ -204,7 +292,20 @@
             <option value="30033">30033</option>
             <option value="30011 and 30013">30011 and 30013</option>
             <option value="30011, 30012, 30013, 30022">30011, 30012, 30013, 30022</option>
-          </select></td>
+          </select> -->
+          <select name="Car No." id="Car No.">
+            <option value="30011">Car No.1</option>
+            <option value="30012">Car No.2</option>
+            <option value="30021">Car No.3</option>
+            <option value="30022">Car No.4</option>
+            <option value="30023">Car No.5</option>
+            <option value="30031">Car No.6</option>
+            <option value="30032">Car No.6</option>
+            <option value="30033">Car No.7</option>
+            <option value="30011 and 30013">Car No.8</option>
+            <option value="30011, 30012, 30013, 30022">Car No.9</option>
+          </select>
+        </td>
         
         <td rowspan="3"><input type="image" src="/Images/Defects.JPG" alt="Defect img"></td>
         <td rowspan="3"><input type="text">
@@ -212,19 +313,26 @@
         </td>
       </tr>
       <tr> 
-        <td>Car Type : 
-          <select name="Manufacturing" id="Manufacturing">
+        <td><label for="CarType">Car Type : </label>
+          <!-- <select name="Manufacturing" id="Manufacturing">
             <option value="DM1">DM1</option>
             <option value="DM1,DM2,T">DM1,DM2,T</option>
             <option value="DM2">DM2</option>
             <option value="T">T</option>
-          </select></td>
+          </select> -->
+          <select name="Manufacturing" id="Manufacturing">
+            <option value="DM1">Car Type 1</option>
+            <option value="DM1,DM2,T">Car Type 2</option>
+            <option value="DM2">Car Type 3</option>
+            <option value="T">Car Type 4</option>
+          </select>
+        </td>
         
       
       </tr>
       <tr> 
-        <td>Carbody ID no. : 
-          <select name="CarbodyID" id="CarbodyID">
+        <td><label for="CarbodyId">Carbody ID No. : </label> 
+          <!-- <select name="CarbodyID" id="CarbodyID">
           <option value="001-DM3-001">001-DM3-001</option>
           <option value="003-DM4-001">003-DM4-001</option>
           <option value="004-DM3-001">004-DM3-001</option>
@@ -234,7 +342,19 @@
           <option value="M009">M009</option>
           <option value="NA">NA</option>
           <option value="#NA">#NA</option>
-        </select></td>
+        </select> -->
+        <select name="CarbodyID" id="CarbodyID">
+          <option value="001-DM3-001">Carbody ID No. 1</option>
+          <option value="003-DM4-001">Carbody ID No. 2</option>
+          <option value="004-DM3-001">Carbody ID No. 3</option>
+          <option value="005-T1-001">Carbody ID No. 4</option>
+          <option value="007-DM3-002">Carbody ID No. 5</option>
+          <option value="M003">Carbody ID No. 6</option>
+          <option value="M009">Carbody ID No. 7</option>
+          <option value="NA">Carbody ID No. 8</option>
+          <option value="#NA">Carbody ID No. 9</option>
+        </select>
+      </td>
       </tr>
       <tr> 
         <td>Date Open<input type="date"><br>Open By :<input type="text"></td>
